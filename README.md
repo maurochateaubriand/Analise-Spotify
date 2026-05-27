@@ -27,7 +27,7 @@ SPOTIPY_CLIENT_SECRET=seu_client_secret_aqui
 SPOTIPY_REDIRECT_URI=https://open.spotify.com
 > Para obter as credenciais, crie um app gratuito em [developer.spotify.com](https://developer.spotify.com) e adicione `https://open.spotify.com` como Redirect URI nas configurações do app.
 
-> ⚠️ Na primeira execução o terminal vai pedir para você colar uma URL. Cole a URL que apareceu na barra do navegador após autorizar o app.
+> Na primeira execução o terminal vai pedir para você colar uma URL. Cole a URL que apareceu na barra do navegador após autorizar o app.
 
 6. Rode:
 python main.py
