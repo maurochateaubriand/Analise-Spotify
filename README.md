@@ -15,11 +15,13 @@ Projeto de análise de dados usando Python e a API do Spotify.
 ## Como rodar
 1. Clone o repositório
 2. Instale as dependências: `pip install -r requirements.txt`
-3. Crie um arquivo `.env` na pasta do projeto com o seguinte conteúdo:
+3. Crie um arquivo `.env` na pasta do projeto com o conteúdo:
 
+```
 SPOTIPY_CLIENT_ID=seu_client_id_aqui
 SPOTIPY_CLIENT_SECRET=seu_client_secret_aqui
 SPOTIPY_REDIRECT_URI=https://open.spotify.com
+```
 
 > Para obter as credenciais, crie um app gratuito em [developer.spotify.com](https://developer.spotify.com) e adicione `https://open.spotify.com` como Redirect URI nas configurações do app.
 
