@@ -22,9 +22,11 @@ uv venv
 4. Instale as dependências:
 uv pip install -r requirements.txt
 5. Crie um arquivo `.env` na pasta do projeto com o seguinte conteúdo:
+```
 SPOTIPY_CLIENT_ID=seu_client_id_aqui
 SPOTIPY_CLIENT_SECRET=seu_client_secret_aqui
 SPOTIPY_REDIRECT_URI=https://open.spotify.com
+```
 > Para obter as credenciais, crie um app gratuito em [developer.spotify.com](https://developer.spotify.com) e adicione `https://open.spotify.com` como Redirect URI nas configurações do app.
 
 > Na primeira execução o terminal vai pedir para você colar uma URL. Cole a URL que apareceu na barra do navegador após autorizar o app.
