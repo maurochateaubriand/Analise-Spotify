@@ -1,9 +1,11 @@
 # Análise Musical - Spotify
 
-Projeto de análise de dados usando Python e a API do Spotify.
+Projeto de análise de dados usando Python e a API do Spotify e o Last.FM.
 
 ## O que o projeto faz
-- Busca os 10 artistas e músicas mais ouvidos 
+- Busca os 10 artistas e músicas mais ouvidos via API do Spotify
+- Busca gêneros musicais via MusicBrainz
+- Exibe contagem real de plays via API do Last.fm
 - Gera gráficos visuais com os dados
 
 ## Tecnologias usadas
@@ -11,25 +13,40 @@ Projeto de análise de dados usando Python e a API do Spotify.
 - Spotipy
 - Pandas
 - Matplotlib / Seaborn
+- MusicBrainz
+- Pylast (Last.fm)
 
 ## Como rodar
 
 1. Clone o repositório
 2. Crie o ambiente virtual:
+```
 uv venv
+```
 3. Ative o ambiente:
+```
 .venv\Scripts\activate
+```
 4. Instale as dependências:
+```
 uv pip install -r requirements.txt
+```
 5. Crie um arquivo `.env` na pasta do projeto com o seguinte conteúdo:
 ```
 SPOTIPY_CLIENT_ID=seu_client_id_aqui
 SPOTIPY_CLIENT_SECRET=seu_client_secret_aqui
 SPOTIPY_REDIRECT_URI=https://open.spotify.com
+LASTFM_API_KEY=sua_api_key_aqui
+LASTFM_API_SECRET=seu_api_secret_aqui
+LASTFM_USERNAME=seu_usuario_lastfm_aqui
 ```
 > Para obter as credenciais, crie um app gratuito em [developer.spotify.com](https://developer.spotify.com) e adicione `https://open.spotify.com` como Redirect URI nas configurações do app.
+    > Na primeira execução o terminal vai pedir para você colar uma URL. Cole a URL que apareceu na barra do navegador após autorizar o app.
 
-> Na primeira execução o terminal vai pedir para você colar uma URL. Cole a URL que apareceu na barra do navegador após autorizar o app.
+> Para obter as credenciais do Last.fm, crie um app gratuito em [last.fm/api](https://www.last.fm/api/account/create).
+    > Vincule sua conta do LastFM ao Spotify para contar suas músicas ouvidas.
 
 6. Rode:
+```
 python main.py
+```
